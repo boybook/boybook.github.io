@@ -6,6 +6,37 @@
     src: url("../font/Alibaba-PuHuiTi-Light.svg") format('svg');
 }*/
 
+::-webkit-scrollbar {  
+    width: 4px;
+    height: 0px;
+    background-color: #292929;
+}
+
+::-webkit-scrollbar-track,  
+::-webkit-scrollbar-thumb {  
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {  
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb {  
+    min-height: 20px;
+    background-clip: content-box;
+    background-color: #454545;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {  
+    background-color: #727272;
+}
+
+::-webkit-scrollbar-corner {  
+    background: #111111;  
+}
+
 body {
     background-color: #292929;
     color: white;
@@ -46,8 +77,17 @@ h2 {
         font-size: 32pt;
     }
     h4 {
-        font-size: 12pt;
+        font-size: 16pt;
     }
+}
+
+@keyframes fadeout {
+    from {opacity: 0; transform: scale(0.8); transform: translate(0px, -40px);}
+    to {opacity: 1; transform: scale(1); transform: translate(0px, 0px);}
+}
+
+.fadeout {
+    animation: fadeout 1.5s;
 }
 
 .top {
@@ -70,116 +110,4 @@ h2 {
     margin-right: 60px;
     position: relative;
     overflow: hidden;
-}
-
-#welcome {
-    position: absolute;
-    left: 8%;
-    top: 6%;
-    height: 400px;
-}
-
-#welcome h1 {
-    margin-top: -50px;
-    margin-bottom: 0px;
-}
-
-#banners {
-    width: 100%;
-}
-
-.bannertitle {
-    position: absolute;
-    top: 60%;
-    margin-left: 20%;
-}
-
-.bannertitle h2 {
-    margin-top: -10px;
-    margin-bottom: 0px;
-}
-
-.bannerimg {
-    margin-top: 8%;
-    margin-left: 45%;
-    width: 55%;
-    height: 500px;
-    border-radius: 8px 0px 0px 8px;
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-}
-
-#banner_bedwars {
-    background-image: url("../images/banner_bedwars.png");
-}
-
-.aboutleft {
-    margin-left: 10%;
-    margin-right: 30%;
-    margin-bottom: auto;
-}
-
-.aboutright {
-    margin-left: 30%;
-    margin-right: 10%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-#aboutme {
-    margin-top: 200px;
-    margin-bottom: 100px;
-}
-
-#aboutme p {
-    font-size: 32px;
-}
-
-#minecraft img {
-    padding-right: 0px;
-    padding-left: 20%;
-}
-
-#minecraft p {
-    font-size: 32px;
-    margin-top: 104px;
-    margin-bottom: 104px;
-}
-
-#myworks {
-    margin-top: 200px;
-    margin-bottom: 104px;
-}
-
-.worksentry {
-    padding-top: 104px;
-    padding-bottom: 56px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.workleftimg {
-    border-radius: 8px;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-}
-
-.workrightimg {
-    border-radius: 8px;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.2);
-}
-
-.worklefttext {
-    display: inline-block;
-    padding-left: 80px;
-    width: 30%;
-    text-align: left;
-}
-
-.workrighttext {
-    display: inline-block;
-    padding-right: 80px;
-    width: 30%;
-    text-align: right;
 }
