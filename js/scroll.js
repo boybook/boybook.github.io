@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(".fadeout").hide();
 	var h3_height = document.documentElement.clientHeight;
 	
-	$(window).scroll(function(){
+    var onScroll = function(){
 		var this_scrollTop = $(this).scrollTop();
 		
 		var scroll = this_scrollTop + (h3_height / 1.2);
@@ -18,6 +18,9 @@ $(document).ready(function(){
                 //alert("top=" + top + "\noffsettop=" + $(this).offset().top + "\nscroll=" + scroll + "\n展示啦！")
             }
         })
-	});
+	};
+    
+    onScroll();
+	$(window).scroll(onScroll);
 	
 });

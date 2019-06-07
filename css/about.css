@@ -1,0 +1,76 @@
+/* CSS Document */
+
+#about {
+    margin-top: 104px;
+    margin-bottom: 104px;
+}
+
+#infocard {
+    background-color:#383838;
+    width: 85%;
+    margin: auto;
+    margin-top: 72px;
+    height: 180px;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#infocard table {
+    width: 100%;
+    height: 100%;
+    font-size: 16pt;
+}
+
+#infocard table th {
+    padding: 20px;
+    text-align: center;
+    font-size: 32pt;
+    width: 28%;
+}
+
+#infocard table td {
+    padding: 20px;
+}
+
+#education {
+    margin-top: 104px;
+}
+
+#education table {
+    margin-top: 20px;
+    width: 80%;
+    font-size: 20pt;
+}
+
+#education p {
+    width: 80%;
+}
+
+#experience {
+    margin-top: 104px;
+}
+
+#experience img {
+    padding-right: 0px;
+    padding-left: 20%;
+    width: 80%;
+}
+
+#experience p {
+    font-size: 20pt;
+    margin-top: 64px;
+    margin-bottom: 104px;
+}
+
+#skill {
+    margin-top: 104px;
+}
+
+#skill h4 {
+    margin-bottom: 8px;
+}
+
+#skill p {
+    font-size: 32pt;
+    margin-top: 8px;
+}
