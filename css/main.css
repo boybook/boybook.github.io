@@ -81,6 +81,24 @@ h2 {
     }
 }
 
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40pt;
+    }
+    h2 {
+        font-size: 32pt;
+    }
+    h3 {
+        font-size: 24pt;
+    }
+    h4 {
+        font-size: 16pt;
+    }
+    .top ul {
+        width: 100%;
+    }
+}
+
 @keyframes fadeout {
     from {opacity: 0; transform: scale(0.8); transform: translate(0px, -40px);}
     to {opacity: 1; transform: scale(1); transform: translate(0px, 0px);}
@@ -107,6 +125,27 @@ h2 {
 
 .top li {
     float: right;
+    margin-right: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+    height: auto;
+    width: 100%;
+    opacity: 0.6;
+}
+
+.footer ul {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    overflow: hidden;
+    margin-top: 32px;
+}
+
+.footer li {
+    float: left;
     margin-right: 60px;
     position: relative;
     overflow: hidden;
