@@ -6,30 +6,63 @@
 }
 
 #infocard {
-    background-color:#383838;
+    background-color: #383838;
     width: 85%;
     margin: auto;
     margin-top: 72px;
-    height: 180px;
     border-radius: 8px;
-    padding: 8px;
+    padding: 2.5% 2.5%;
+    align-content: center;
 }
 
 #infocard table {
     width: 100%;
     height: 100%;
     font-size: 16pt;
+    display: table;
 }
 
 #infocard table th {
-    padding: 20px;
+    padding: 2%;
     text-align: center;
     font-size: 32pt;
     width: 28%;
 }
 
 #infocard table td {
-    padding: 20px;
+    padding: 1%;
+}
+
+#infocard-left {
+    display: none;
+    width: 100%;
+    text-align: center;
+    font-size: 32pt;
+}
+
+#infocard-right {
+    display: none;
+    width: 85%;
+    text-align: center;
+}
+
+@media screen and (max-width: 850px) {
+    #infocard-left {
+        display: block;
+    }
+    #infocard-right {
+        display: block;
+        align-content: center;
+    }
+    #infocard table {
+        display: none;
+    }
+}
+
+#infocard ls {
+    padding: 2.5% 2.5%;
+    font-size: 16pt;
+    display: inline-block;
 }
 
 #education {

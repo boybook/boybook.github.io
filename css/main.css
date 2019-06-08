@@ -133,6 +133,7 @@ a:hover {
 
 .fadeout {
     animation: fadeout 1.5s;
+    animation-play-state: paused;
 }
 
 .top {
